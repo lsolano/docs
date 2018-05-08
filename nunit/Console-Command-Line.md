@@ -115,7 +115,7 @@ Without the V2 driver, only version 3.0 and higher tests may be run.
    <td>Set internal trace LEVEL. Values: Off, Error, Warning, Info, Verbose (Debug)</td></tr>
 
 <tr><th>--labels=VALUE</th>
-    <td>Specify whether to write test case names to the output. Values: Off, On, All</td></tr>
+    <td>Specify whether to write test case names to the output. Values: Off, On, Before, After, All</td></tr>
 
 <tr><th>--test-name-format=VALUE</th>
     <td>Specify a non-standard naming pattern to use when generating all test names. See [[Template Based Test Naming]].</td></tr>
