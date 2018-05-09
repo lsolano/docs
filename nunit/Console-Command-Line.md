@@ -115,7 +115,25 @@ Without the V2 driver, only version 3.0 and higher tests may be run.
    <td>Set internal trace LEVEL. Values: Off, Error, Warning, Info, Verbose (Debug)</td></tr>
 
 <tr><th>--labels=VALUE</th>
-    <td>Specify whether to write test case names to the output. Values: Off, On, Before, After, All</td></tr>
+    <td>
+Specify whether to write test case names to the output. Values: Off, On, Before, After, or All.<br/><br/>
+
+**--labels:Off** 
+No labeling is used. Both normal and immediate output appear in the order produced - i.e. immediate first.
+
+**--labels:On**
+A label appears before each sequence of output lines from the same test. Since tests may be run in parallel, output from different tests may be intermixed.
+
+**--labels:Before**
+A label appears at the start of every test, whether it produces output or not. Additional labels are produced as needed if interspersed output takes place, just as for `--labels:On`. Synonym for `--labels:All`.
+
+**--labels:After**
+A label appears at the end of every test, whether it produced output or not. This label includes the pass/fail status of the test in addition to its name. Additional labels are produced as needed if there is any output, just as for `--labels:On`.
+
+**--labels:All**
+A label appears at the start of every test, whether it produces output or not. Additional labels are produced as needed if interspersed output takes place, just as for `--labels:On`. Synonym for `--labels:Before`.
+    </td>
+</tr>
 
 <tr><th>--test-name-format=VALUE</th>
     <td>Specify a non-standard naming pattern to use when generating all test names. See [[Template Based Test Naming]].</td></tr>
