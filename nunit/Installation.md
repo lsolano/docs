@@ -38,7 +38,7 @@ To run your tests, simply run your executable test assembly. No other runner is 
 
 ### Downloading the Zip File
 
-Download the latest binary zip from our [Download](http://nunit.org/index.php?p=download) page or from [GitHub](https://github.com/nunit/nunit/releases). Unzip the file into any convenient directory.
+Download the latest binary zip from our [Download](http://nunit.org/download/) page or from [GitHub](https://github.com/nunit/nunit/releases). Unzip the file into any convenient directory.
 
 If you would like be able to run nunit3-console from the command line, put the bin directory, containing nunit3-console.exe on your path.
 
