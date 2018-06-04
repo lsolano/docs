@@ -67,7 +67,10 @@ It now has the following actual levels:
 #### UseVsKeepEngineRunning
 This setting is used by the adapter to signal to the VSTest.Execution engine to keep running after the tests have finished running.  This can speed up execution of subsequent test runs, as the execution engine already is loaded, but running the risks of either holding onto test assemblies and having some tests not properly cleaned out.   The settings is the same as using the Visual Studio  Test/Test Settings/Keep Test Execution Engine running. 
 
-
+#### DumpXmlTestDiscovery and DumpXmlTestResults
+These settings are used to dump the output from NUnit, as it is received by the adapter, before any processing in the adapter is done, to disk.  It is part of the diagnostics tools for the adapter. 
+You can find the files under your current outputfolder, in a subfolder named Dump. 
+(Note: This is not the same as the TestResults folder, this data is not testresults, but diagnostics dumps)
 
 
 ## NUnit 2.x
