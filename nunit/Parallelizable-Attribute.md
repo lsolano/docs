@@ -24,7 +24,7 @@ public enum ParallelScope
 
  3. Although `ParallelScope.None` continues to be supported, it is recommended that you use the new [[NonParallelizable Attribute]] in new work.
 
- 4. Parallel execution is supported by the NUnit framework on desktop .NET runtimes. It is not supported in our Portable or .NET Standard builds at this time, although the attributes are recognized without error in order to allow use in projects that build against multiple targets.
+ 4. Parallel execution is not supported in our .NET Standard 1.4 build at this time. Although the attributes are still present for ease of use in projects that build against multiple targets, they no-op.
 
 #### Specifying Parallelizable at Multiple Test Levels
 
