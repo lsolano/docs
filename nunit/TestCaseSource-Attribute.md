@@ -42,6 +42,34 @@ to provide test cases. It has the following characteristics:
    with the signature of the method on which the attribute appears.
    See the **Test Case Construction** section below for details.
 
+Sometimes we would like to parameterise the source, e.g. if we use the same source for multiple tests, to this end it is possible to pass parameters to the source, if the source is a method. The parameters are specified as an array of parameters that are passed to the source method.
+
+```C#
+public class MyTestClass
+{
+    [TestCaseSource(nameof(TestStrings), new object[] { true })]
+    public void LongNameWithEvenNumberOfCharacters(string name)
+    {
+        Assert.That(name.Length, Is.GreaterThan(5));
+        bool hasEvenNumOfCharacters = (name.Length / 2) == 0;
+    }
+
+    [TestCaseSource(nameof(TestStrings), new object[] { false })]
+    public void ShortName(string name)
+    {
+        Assert.That(name.Length, Is.LessThan(15));
+    }
+
+    static IEnumerable<string> TestStrings(bool generateLongTestCase)
+    {
+        if (generateLongTestCase)
+            yield return "ThisIsAVeryLongNameThisIsAVeryLongName";
+        yield return "SomeName";
+        yield return "YetAnotherName";
+    }
+}
+```
+
 #### Form 2 - [TestCaseSource(Type sourceType, string sourceName)]
 
 ```C#
@@ -81,6 +109,8 @@ to provide test cases. It has the following characteristics:
    with the signature of the method on which the attribute appears. 
    See the **Test Case Construction** section below for details.
 
+Similar to Form 1 it is possible to pass parameters to the source, if the source is a method.
+
 #### Form 3 - [TestCaseSource(Type sourceType)]
 
 ```C#
@@ -108,6 +138,8 @@ The Type argument in this form represents the class that provides test cases.
 It must have a default constructor and implement `IEnumerable`. The enumerator
 should return test case data compatible with the signature of the test on which the attribute appears.
 See the **Test Case Construction** section below for details.
+
+Note that it is not possible to pass parameters to the source, even if the source is a method.
 
 #### Named Parameters
 
