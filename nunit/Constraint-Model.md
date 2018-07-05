@@ -29,16 +29,22 @@ Assert.That(Func<bool> condition, string message, params object[] parms);
 Assert.That(Func<bool> condition, Func<string> getExceptionMessage);
 
 Assert.That<TActual>(ActualValueDelegate<TActual> del, IResolveConstraint constraint)
-Assert.That<TActual>(ActualValueDelegate<TActual> del, IResolveConstraint constraint, string message, object[] parms)
-Assert.That<TActual>(ActualValueDelegate<TActual> del, IResolveConstraint expr, Func<string> getExceptionMessage)
+Assert.That<TActual>(ActualValueDelegate<TActual> del, IResolveConstraint constraint,
+    string message, object[] parms)
+Assert.That<TActual>(ActualValueDelegate<TActual> del, IResolveConstraint expr,
+    Func<string> getExceptionMessage)
 
 Assert.That<TActual>(TActual actual, IResolveConstraint constraint)
-Assert.That<TActual>(TActual actual, IResolveConstraint constraint, string message, params object[] parms)
-Assert.That<TActual>(TActual actual, IResolveConstraint expression, Func<string> getExceptionMessage)
+Assert.That<TActual>(TActual actual, IResolveConstraint constraint, string message,
+    params object[] parms)
+Assert.That<TActual>(TActual actual, IResolveConstraint expression,
+    Func<string> getExceptionMessage)
 
 Assert.That(TestDelegate del, IResolveConstraint constraint)
-Assert.That(TestDelegate code, IResolveConstraint constraint, string message, params object[] args)
-Assert.That(TestDelegate code, IResolveConstraint constraint, Func<string> getExceptionMessage)
+Assert.That(TestDelegate code, IResolveConstraint constraint, string message,
+    params object[] args)
+Assert.That(TestDelegate code, IResolveConstraint constraint,
+    Func<string> getExceptionMessage)
 ```
 
 The overloads that take a bool work exactly like `Assert.IsTrue`, except that `Assert.IsTrue` does not accept a `Func<string>` for the exception message.
