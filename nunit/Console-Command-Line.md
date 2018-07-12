@@ -98,10 +98,7 @@ Without the V2 driver, only version 3.0 and higher tests may be run.
 
 <tr><th>--output, --out=PATH</th>
     <td>File PATH to contain text output from the tests.</td></tr>
-    
-<tr><th>--err=PATH</th>
-    <td>File PATH to contain error output from the tests.</td></tr>
-    
+
 <tr><th>--result=SPEC</th>
     <td>An output SPEC for saving the test results. This option may be repeated.</td></tr>
     
