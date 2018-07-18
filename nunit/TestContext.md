@@ -157,7 +157,7 @@ The following is a list of outcomes currently produced by NUnit. Others may be a
 
 #### TestDirectory
 
-Gets the full path of the directory containing the current test assembly. Not available in the SilverLight or Portable builds.
+Gets the full path of the directory containing the current test assembly.
 
 #### WorkDirectory
 
