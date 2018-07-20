@@ -7,7 +7,7 @@
 
 #### Technical Practices
 <table>
-<tr><td>Building and testing</td><td>See BUILD.md in each repository.</td></tr>
+<tr><td>Building and testing</td><td>See BUILDING.md in each repository.</td></tr>
 <tr><td>[[Coding Standards]]</td><td>Describes coding standards used in NUnit.</td></tr>
 <tr><td>[[Best practices for XML documentation]]</td><td>Guidelines to consider when dealing with public APIs.</td></tr>
 <tr><td>[[Packaging the Framework]]</td><td>How to create the packages for a new NUnit Framework release.</td></tr>
