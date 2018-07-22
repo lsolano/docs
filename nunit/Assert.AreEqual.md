@@ -20,10 +20,9 @@ Assert.AreEqual(5, 5.0);
 ```
 #### Comparing Floating Point Values
 
-Values of type float and double are normally compared using an additional
+Values of type float and double are compared using an additional
 argument that indicates a tolerance within which they will be considered
-as equal. The value of `GlobalSettings.DefaultFloatingPointTolerance` is 
-used if a third argument is not provided.
+as equal.
 
 Special values are handled so that the following Asserts succeed:
 
