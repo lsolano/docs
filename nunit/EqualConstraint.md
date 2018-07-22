@@ -236,3 +236,7 @@ Assert.That(list1, Is.EqualTo(list2).Using(myComparer));
 8. NUnit has special semantics for comparing **Streams** and
    **DirectoryInfos**. For a **Stream**, the contents are compared.
    For a **DirectoryInfo**, the first-level directory contents are compared.
+
+#### See also...
+ * [[Assert.AreEqual]]
+ * [[DefaultFloatingPointTolerance Attribute]]
