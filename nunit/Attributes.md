@@ -11,6 +11,7 @@ This table lists all the attributes supported by NUnit.
 | [[Culture Attribute]]             | Specifies cultures for which a test or fixture should be run. |
 | [[Datapoint Attribute]]           | Provides data for [Theories](Theory-Attribute). |
 | [[DatapointSource Attribute]]     | Provides data for [Theories](Theory-Attribute). |
+| [[DefaultFloatingPointTolerance Attribute]] | Indicates that the test should use the specified tolerance as default for float and double comparisons. |
 | [[Description Attribute]]         | Applies descriptive text to a Test, TestFixture or Assembly. |
 | [[Explicit Attribute]]            | Indicates that a test should be skipped unless explicitly run. |
 | [[Ignore Attribute]]              | Indicates that a test shouldn't be run for some reason. |
