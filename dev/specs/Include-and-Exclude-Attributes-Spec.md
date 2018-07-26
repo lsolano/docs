@@ -11,7 +11,7 @@ We would define two new attributes, **IncludeAttribute** and **ExcludeAttribute*
 [Include(Platform="Win7,Win8")]
 [Exclude("Runtime:Net-4.5")]
 [Exclude("Linux")]
-[Include("Runtime >= 4.0 and Platform == "Linux")]
+[Include("Runtime >= 4.0 and Platform == "Linux"")]
 ```
 
 #### Syntax Options
