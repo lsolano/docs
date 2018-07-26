@@ -33,30 +33,35 @@ Child elements allowed: None.
 #### `<test>`
 
 Represents a selection by test name. The full name of the test is used as its inner text.
+If the filter should use a regular expression for matching then the element should contain an attribute named `re` with the value `"1"`.
 
 Child elements allowed: None.
 
 #### `<cat>`
 
 Represents a CategoryFilter. The text of the element contains a single category.
+If the filter should use a regular expression for matching then the element should contain an attribute named `re` with the value `"1"`.
 
 Child elements allowed: None.
 
 #### `<class>`
 
-Represents a selection by class name. The fully qualified name of the class is used as its inner text.
+Represents a selection by class name. The fully qualified name of the class is used as its inner text. 
+If the filter should use a regular expression for matching then the element should contain an attribute named `re` with the value `"1"`.
 
 Child elements allowed: None.
 
 #### `<method>`
 
 Represents a selection by method name. The name of the method is used as its inner text.
+If the filter should use a regular expression for matching then the element should contain an attribute named `re` with the value `"1"`.
 
 Child elements allowed: None.
 
 #### `<namespace>`
 
 Represents a selection by namespace. The fully qualified name of the namespace is used as its inner text.
+If the filter should use a regular expression for matching then the element should contain an attribute named `re` with the value `"1"`.
 
 Child elements allowed: None.
 
@@ -64,11 +69,13 @@ Child elements allowed: None.
 
 Represents a PropertyFilter. The element has an attribute `name` which specifies the name of the property.
 The text of the element contains the value of the property.
+If the filter should use a regular expression for matching then the element should contain an attribute named `re` with the value `"1"`.
 
 Child elements allowed: None.
 
 #### `<name>`
 
 Represents a selection by test name. The test name assigned by NUnit is used as its inner text.
+If the filter should use a regular expression for matching then the element should contain an attribute named `re` with the value `"1"`.
 
 Child elements allowed: None.
