@@ -6,6 +6,7 @@ a TestFixture or Test attribute.
 ```C#
 [TestFixture]
 [Author("Jane Doe", "jane.doe@example.com")]
+[Author("Another Developer", "email@example.com")]
 public class MyTests
 {
  [Test]
@@ -13,6 +14,7 @@ public class MyTests
 
  [Test]
  [Author("Joe Developer")]
+ [Author("Yet Another Developer", "not.my.email@example.com")]
  public void Test2() { /* ... */ }
 }
 
