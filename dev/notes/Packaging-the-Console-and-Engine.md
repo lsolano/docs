@@ -5,19 +5,16 @@ This note describes how to create release packages for the NUnit console runner 
 Software Prerequisites
 ----------------------
 
-Various software combinations and environments may be used to build the NUnit 3 console runner and engine. Our standard environment is Visual Studio 2017 Community Edition.
+Various software combinations and environments may be used to build the NUnit 3 console runner and engine. Our standard environment is Visual Studio 2017 15.6+ Community Edition.
 
 Preparing for Release
 ---------------------
 
-#### Create a Release Branch
-
-All work on releases should be done on a branch.
+#### Merge latest into the release branch
 
 1. Fetch and pull latest from master
-2. Create a branch in the form release/3.2.0
-3. As you make the changes below, push the branch to GitHub and create a Pull Request to allow other team members to review your changes.
-4. **Do not merge this branch/PR**, we will create a separate PR to merge the changes back into master.
+2. Checkout the release branch and merge master
+3. **Do not merge the release branch**, we will create a separate PR to merge the changes back into master.
 
 #### Make Sure it Works!
 
