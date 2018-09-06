@@ -25,7 +25,6 @@ and running your tests in any IDE and on any .NET Framework back to .NET 2.0.
  * [411](https://github.com/nunit/nunit-console/issues/411) Make output received when providing user friendly messages unloading the domain more user friendly
  * [412](https://github.com/nunit/nunit-console/issues/412) Extensions not dectected for version 3.9.0-dev-03997
  * [436](https://github.com/nunit/nunit-console/issues/436) NUnitEngineException : Unable to acquire remote process agent
-
  * [446](https://github.com/nunit/nunit-console/issues/446) Output CI version info to console
  * [448](https://github.com/nunit/nunit-console/issues/448) Update vs-project-loader extension to 3.8.0
  * [450](https://github.com/nunit/nunit-console/issues/450) Update NUnit.Extension.VSProjectLoader to 3.8.0
