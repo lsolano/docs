@@ -4,6 +4,7 @@ Specifications are descriptions of work we are doing or plan to do. They may var
 
 |  Component      |  Title                                     |  Implemented?  |
 |-----------------|--------------------------------------------|----------------|
+|   **General**   | [[Internal Trace]]                         | Partial?       |
 |  **Framework**  | [[Include and Exclude Attributes Spec]]    | No             |
 |                 | [[Extended Constraint Syntax Spec]]        | No             |
 |                 | [[Dynamic Test Cases Spec]]                | No             |
@@ -11,4 +12,4 @@ Specifications are descriptions of work we are doing or plan to do. They may var
 |                 | [[Generation of Test Names Spec]]          | Yes            |
 |                 | [[Parameterized Test Fixtures Spec]]       | Partial        |
 |                 | [[Test Dependency Attribute Spec]]         | No             |
-| **Test Engine** | [[Engine Addins Spec]]                     | Yes            |
+| **Test Engine** | [[Engine Addins Spec]]                     | Partial        |
