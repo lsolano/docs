@@ -4,7 +4,7 @@ Specifications are descriptions of work we are doing or plan to do. They may var
 
 |  Component      |  Title                                     |  Implemented?  |
 |-----------------|--------------------------------------------|----------------|
-|   **General**   | [[Internal Trace]]                         | Partial?       |
+|   **General**   | [[Internal Trace Spec]]                    | Partial?       |
 |  **Framework**  | [[Include and Exclude Attributes Spec]]    | No             |
 |                 | [[Extended Constraint Syntax Spec]]        | No             |
 |                 | [[Dynamic Test Cases Spec]]                | No             |
