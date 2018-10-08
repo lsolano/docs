@@ -13,6 +13,7 @@ This is a **[Flags]** enumeration used to specify which tests may run in paralle
 **ParallelScope.Self**     | the test itself may be run in parallel with other tests | Classes, Methods
 **ParallelScope.Children** | child tests may be run in parallel with one another     | Assembly, Classes
 **ParallelScope.Fixtures** | fixtures may be run in parallel with one another        | Assembly, Classes
+**ParallelScope.All**      | the test and its descendants may be run in parallel<br>with others at the same level | Classes, Methods
 
 ##### Notes: 
  1. Some values are invalid on certain elements, although they will compile. NUnit will report any tests so marked as invalid and will produce an error message.
