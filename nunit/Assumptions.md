@@ -1,2 +1,12 @@
-Under Construction
+Assumptions are intended to express the state a test must be in to provide a meaningful result. They are functionally similar to assertions, however a unmet assumption will produce an Inconclusive result, as opposed to a Failure.
 
+Assumptions make use of the `Assume` static class.
+
+```
+Assume.That(myString, Is.EqualTo("Hello"));
+```
+
+`Assume.That()` has the same set of overloads as `Assert.That()`. For further details there, see the [[Constraint Model]] documentation.
+```
+
+Note that assumptions cannot be used within [[Multiple Asserts]].
