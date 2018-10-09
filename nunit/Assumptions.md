@@ -7,6 +7,5 @@ Assume.That(myString, Is.EqualTo("Hello"));
 ```
 
 `Assume.That()` has the same set of overloads as `Assert.That()`. For further details there, see the [[Constraint Model]] documentation.
-```
 
 Note that assumptions cannot be used within [[Multiple Asserts]].
