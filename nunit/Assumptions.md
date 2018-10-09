@@ -2,9 +2,9 @@ Assumptions are intended to express the state a test must be in to provide a mea
 
 Assumptions make use of the `Assume` static class.
 
-## Syntax
+### Syntax
 
-```
+```C#
 Assume.That(myString, Is.EqualTo("Hello"));
 ```
 
