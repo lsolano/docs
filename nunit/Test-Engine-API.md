@@ -1,18 +1,4 @@
-The NUnit Test Engine API is our first published API for discovering, exploring and executing tests programmatically. Previously, third-party runners have had to use unsupported internal classes and methods in order to execute NUnit tests.  With the development of the Engine API, this is no longer necessary.
-
-### Objectives of the API
-
-The API was developed with a number of objectives in mind:
-
-* To provide a public, published API for discovering and executing NUnit tests, suitable for use by the NUnit console and Gui runners as well as by third parties.
-* To allow discovery and execution of NUnit tests independent of the particular build or version of the framework used and without the need to reference the framework itself.
-* To allow future development of drivers for other frameworks and for those tests to be discovered and executed in the same way as NUnit tests.
-* To provide specific features beyond the frameworks, including
-  * Determining how and where each test assembly is loaded and executed.
-  * Parsing project files of various types and using them to determine the location of test assemblies and the options to be used in executing them.
-  * Providing access to NUnit settings for a machine.
-  * Other engine-layer features may be  introduced as new versions are created.
-* To isolate client runners from the engine itself, so that any updated engine installed will become immediately available to all clients on a machine without the need to upgrade the client.
+The NUnit Test Engine API is our published API for discovering, exploring and executing tests programmatically. Third-party test runners should use the Engine API as the supported method to execute NUnit tests.
 
 ### Overview
 
@@ -25,17 +11,16 @@ The actual engine is contained in the `nunit.engine` assembly. This assembly is 
 The static class [TestEngineActivator](https://github.com/nunit/nunit-console/blob/master/src/NUnitEngine/nunit.engine.api/TestEngineActivator.cs) is used to get an interface to the engine. Its `CreateInstance` member has two overloads, depending on whether a particular minimum version of the engine is required.
 
 ```C#
-public static ITestEngine CreateInstance(bool privateCopy = false);
-public static ITestEngine CreateInstance(Version minVersion, bool privateCopy = false);
+public static ITestEngine CreateInstance(bool unused = false);
+public static ITestEngine CreateInstance(Version minVersion, bool unused = false);
 ```
+
+(The `unused` bool parameter previously allowed users of this API to chose whether to restict the runner to only use a locally installed copy of the engine. Since version 3.8, the NUnit Engine no longer has the functionality to utilise global installations.)
 
 We search for the engine in a standard set of locations, starting with the current ApplicationBase. 
 
 1. The Application base and probing privatepath.
 2. A copy installed as a NuGet package - intended for use only when developing runners that make use of the engine.
-3. If `privateCopy` is false and the engine is not found in the first two steps, we check standard locations where the engine may have been installed.
-
-**Note:** We encourage authors of runners to **not** use the private copy feature, but they may use it if they do not want to rely on the user already having the engine installed. We suggest any installation of a local copy of the engine be optional in the install program.
 
 ### Key Interfaces
 
@@ -279,3 +264,17 @@ The following interfaces are used by engine extensions:
 | [IDriverFactory](https://github.com/nunit/nunit-console/blob/master/src/NUnitEngine/nunit.engine.api/Extensibility/IDriverFactory.cs)       | Provide a driver to interface with a test framework |
 | [IFrameworkDriver](https://github.com/nunit/nunit-console/blob/master/src/NUnitEngine/nunit.engine.api/Extensibility/IFrameworkDriver.cs)     | Driver returned by IDriverFactory |
 | [IResultWriter](https://github.com/nunit/nunit-console/blob/master/src/NUnitEngine/nunit.engine.api/Extensibility/IResultWriter.cs)        | Result writer returned by IResultWriterFactory |
+
+### Objectives of the API
+
+The API was developed with a number of objectives in mind:
+
+* To provide a public, published API for discovering and executing NUnit tests, suitable for use by the NUnit console and Gui runners as well as by third parties.
+* To allow discovery and execution of NUnit tests independent of the particular build or version of the framework used and without the need to reference the framework itself.
+* To allow future development of drivers for other frameworks and for those tests to be discovered and executed in the same way as NUnit tests.
+* To provide specific features beyond the frameworks, including
+  * Determining how and where each test assembly is loaded and executed.
+  * Parsing project files of various types and using them to determine the location of test assemblies and the options to be used in executing them.
+  * Providing access to NUnit settings for a machine.
+  * Other engine-layer features may be  introduced as new versions are created.
+* To isolate client runners from the engine itself, so that any updated engine installed will become immediately available to all clients on a machine without the need to upgrade the client.
