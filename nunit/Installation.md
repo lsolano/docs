@@ -2,7 +2,7 @@ To get a copy of the NUnit 3, you can use various installation approaches.
 
 1.  Full NUnit install via NuGet.
 2.  NUnitLite install via NuGet.
-3.  Zip file download.
+3.  Zip and/or MSI file download.
 4.  Combined Approach
 
 ### Using NuGet Packages
@@ -38,9 +38,9 @@ To run your tests, simply run your executable test assembly. No other runner is 
 
 ### Downloading the Zip File
 
-Download the latest binary zip from our [Download](http://nunit.org/download/) page or from [GitHub](https://github.com/nunit/nunit/releases). Unzip the file into any convenient directory.
+Download the latest binary zip of the NUnit Framework from our [Download](http://nunit.org/download/) page or from [GitHub](https://github.com/nunit/nunit/releases). Unzip the file into any convenient directory.
 
-If you would like be able to run nunit3-console from the command line, put the bin directory, containing nunit3-console.exe on your path.
+You can also download the latest binary zip or an MSI installer of the NUnit Console from [GitHub](https://github.com/nunit/nunit-console/releases). Unzip the file or install the MSI and then if you would like be able to run nunit3-console from the command line, put the bin directory, containing nunit3-console.exe on your path.
 
 In your test assemblies, add a reference to nunit.framework.dll, using the copy in the subdirectory for the appropriate runtime version. For example, if you are targeting .NET 4.0, you should reference the framework assembly in the net-4.0 subdirectory.
 
