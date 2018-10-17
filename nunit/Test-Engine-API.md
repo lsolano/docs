@@ -15,7 +15,7 @@ public static ITestEngine CreateInstance(bool unused = false);
 public static ITestEngine CreateInstance(Version minVersion, bool unused = false);
 ```
 
-(The `unused` bool parameter previously allowed users of this API to chose whether to restict the runner to only use a locally installed copy of the engine. Since version 3.8, the NUnit Engine no longer has the functionality to utilise global installations.)
+(The `unused` bool parameter previously allowed users to indicate if wished to restrict usage of global NUnit Engine installations. The latter functionality is no longer available.)
 
 We search for the engine in a standard set of locations, starting with the current ApplicationBase. 
 
@@ -272,9 +272,7 @@ The API was developed with a number of objectives in mind:
 * To provide a public, published API for discovering and executing NUnit tests, suitable for use by the NUnit console and Gui runners as well as by third parties.
 * To allow discovery and execution of NUnit tests independent of the particular build or version of the framework used and without the need to reference the framework itself.
 * To allow future development of drivers for other frameworks and for those tests to be discovered and executed in the same way as NUnit tests.
-* To provide specific features beyond the frameworks, including
+* To provide specific features beyond the frameworks, including:
   * Determining how and where each test assembly is loaded and executed.
   * Parsing project files of various types and using them to determine the location of test assemblies and the options to be used in executing them.
   * Providing access to NUnit settings for a machine.
-  * Other engine-layer features may be  introduced as new versions are created.
-* To isolate client runners from the engine itself, so that any updated engine installed will become immediately available to all clients on a machine without the need to upgrade the client.
