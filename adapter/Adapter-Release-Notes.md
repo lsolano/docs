@@ -1,3 +1,39 @@
+#### NUnit3 Test Adapter for Visual Studio - Version 3.11 - October 21, 2018
+
+#####  Features
+* [PR 500](https://github.com/nunit/nunit3-vs-adapter/pull/500) NUnit3VsAdapter to support managed sources only based on [RFC](https://github.com/Microsoft/vstest-docs/blob/master/RFCs/0020-Improving-Logic-To-Pass-Sources-To-Adapters.md)  (Thanks to [mayankbansal018](https://github.com/mayankbansal018) for this PR)
+
+* [543](https://github.com/nunit/nunit3-vs-adapter/issues/543) Adapter should pass `Error` and `Progress` messages to vstest engine as well as stdOut messages (Thanks to [NikolayPianikov](https://github.com/NikolayPianikov) for [PR 544](https://github.com/nunit/nunit3-vs-adapter/pull/544)). Also fixes this [TeamCity issue](https://youtrack.jetbrains.com/issue/TW-55900)  
+
+* Mono.Cecil is now embedded with the adapter, so user dependencies are no longer overwritten. 
+
+##### Resolved Issues
+
+* [426](https://github.com/nunit/nunit3-vs-adapter/issues/426)
+Exception thrown while loading tests if In-Proc VSTest DataCollector is used (Thanks to [drognanar](https://github.com/drognanar) for [PR 510](https://github.com/nunit/nunit3-vs-adapter/pull/510) )
+
+* [490](https://github.com/nunit/nunit3-vs-adapter/issues/490) Fix Causes Build Error (Somewhat Indirectly) by published pdb files from [Issue 461](https://github.com/nunit/nunit3-vs-adapter/issues/461)
+
+* [494](https://github.com/nunit/nunit3-vs-adapter/issues/494)  TestContext.AddTestAttachment does not work on Linux environment with specified dotnet logger  (Thanks to [Kira-Lappo](https://github.com/Kira-Lappo) for [PR 527 ](https://github.com/nunit/nunit3-vs-adapter/pull/527))
+
+* [495](https://github.com/nunit/nunit3-vs-adapter/issues/495) Category as filter not working in single agent flow in vstest task
+
+* [506](https://github.com/nunit/nunit3-vs-adapter/issues/506) Test categories aren't propagated to vstest trx logs
+
+* [516](https://github.com/nunit/nunit3-vs-adapter/issues/516) ArgumentException when whitespace sent to logger 
+
+* [538](https://github.com/nunit/nunit3-vs-adapter/issues/538)  NuGet Package : Add repository metadata  (Thanks to [MaximRouiller](https://github.com/MaximRouiller) for [PR 539](https://github.com/nunit/nunit3-vs-adapter/pull/539))
+
+* [540](https://github.com/nunit/nunit3-vs-adapter/issues/540) Missing null check before runner dispose
+
+ 
+
+##### Notes
+
+* [518](https://github.com/nunit/nunit3-vs-adapter/issues/518)  NUnit VSIX test adapters deprecation notice added .  NUnit will still deliver a vsix for this version. 
+
+
+
 #### NUnit3 Test Adapter for Visual Studio - Version 3.10 - March 5, 2018
 
 #####  Features
