@@ -50,7 +50,7 @@ class TearDown methods after those in the derived classes.
    separate classes in the inheritance hierarchy, the order in which they
    are executed is not guaranteed.
 
-2.TearDown methods may be async if running under .NET 4.0 or higher.
+2. TearDown methods may be async if running under .NET 4.0 or higher.
 
 #### See also...
  * [[SetUp Attribute]]
