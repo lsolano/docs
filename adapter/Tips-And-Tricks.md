@@ -1,5 +1,5 @@
 > ﻿NOTE:
-> As of the 3.0 final release, these registry settings are no longer recognized. Instead, use settings in the `.runsettings` file. 
+> As of the 3.0 final release, the registry settings are no longer recognized. Instead, use settings in the `.runsettings` file. 
 
 
 ## NUnit 3.x
@@ -52,9 +52,11 @@ This setting is sent to NUnit to enable/disable shadow-copying.
 #### Verbosity
 This controls the outputs from the adapter to the Visual Studio Output/Tests window.
 A higher number includes the information from the lower numbers.
-It now has the following actual levels:
+It has the following actual levels:
 
-0 : Default, lowest verbosity
+-1 : Quiet mode.  Only shows errors and warnings.  
+
+0 : Default, normal information verbosity
 
 1-3: Some more information from setting are output (in particular regarding parallelization)
 

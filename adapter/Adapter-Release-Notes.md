@@ -7,6 +7,10 @@
 
 * Mono.Cecil is now embedded with the adapter, so user dependencies are no longer overwritten. 
 
+* Indentation of the test log format makes it easier to see what information belongs to which assembly.
+
+* Quiet mode added, if you don't want all the information, see [Tips and Tricks](adapter\Tips-And-Tricks.md)
+
 ##### Resolved Issues
 
 * [426](https://github.com/nunit/nunit3-vs-adapter/issues/426)
