@@ -1,4 +1,4 @@
-#### NUnit3 Test Adapter for Visual Studio - Version 3.11 - October 21, 2018
+#### NUnit3 Test Adapter for Visual Studio - Version 3.11 - October 28, 2018
 
 #####  Features
 * [PR 500](https://github.com/nunit/nunit3-vs-adapter/pull/500) NUnit3VsAdapter to support managed sources only based on [RFC](https://github.com/Microsoft/vstest-docs/blob/master/RFCs/0020-Improving-Logic-To-Pass-Sources-To-Adapters.md)  (Thanks to [mayankbansal018](https://github.com/mayankbansal018) for this PR)
