@@ -9,7 +9,7 @@
 
 * Indentation of the test log format makes it easier to see what information belongs to which assembly.
 
-* Quiet mode added, if you don't want all the information, see [Tips and Tricks](adapter\Tips-And-Tricks.md)
+* Quiet mode added, if you don't want all the information, see [[Tips and Tricks]].
 
 ##### Resolved Issues
 
@@ -18,7 +18,7 @@ Exception thrown while loading tests if In-Proc VSTest DataCollector is used (Th
 
 * [490](https://github.com/nunit/nunit3-vs-adapter/issues/490) Fix Causes Build Error (Somewhat Indirectly) by published pdb files from [Issue 461](https://github.com/nunit/nunit3-vs-adapter/issues/461)
 
-* [494](https://github.com/nunit/nunit3-vs-adapter/issues/494)  TestContext.AddTestAttachment does not work on Linux environment with specified dotnet logger  (Thanks to [Kira-Lappo](https://github.com/Kira-Lappo) for [PR 527 ](https://github.com/nunit/nunit3-vs-adapter/pull/527))
+* [494](https://github.com/nunit/nunit3-vs-adapter/issues/494)  TestContext.AddTestAttachment does not work on Linux environment with specified dotnet logger  (Thanks to [Kira-Lappo](https://github.com/Kira-Lappo) for [PR 527](https://github.com/nunit/nunit3-vs-adapter/pull/527))
 
 * [495](https://github.com/nunit/nunit3-vs-adapter/issues/495) Category as filter not working in single agent flow in vstest task
 
@@ -34,7 +34,7 @@ Exception thrown while loading tests if In-Proc VSTest DataCollector is used (Th
 
 ##### Notes
 
-* [518](https://github.com/nunit/nunit3-vs-adapter/issues/518)  NUnit VSIX test adapters deprecation notice added .  NUnit will still deliver a vsix for this version. 
+* [518](https://github.com/nunit/nunit3-vs-adapter/issues/518)  NUnit VSIX test adapters deprecation notice added.  NUnit will still deliver a vsix for this version. 
 
 
 
