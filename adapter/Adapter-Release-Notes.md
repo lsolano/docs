@@ -1,3 +1,13 @@
+#### NUnit3 Test Adapter for Visual Studio - Version 3.11.1 - November 21, 2018
+
+This is a hotfix release to fix the duplicated traits issue.
+
+##### Resolved Issues
+
+* [559](https://github.com/nunit/nunit3-vs-adapter/issues/559) Duplicating tags in Test Explorer when using NUnit3TestAdapter 3.11.0
+* [561](https://github.com/nunit/nunit3-vs-adapter/issues/561) Test task aborted when using TestCategory filters
+
+
 #### NUnit3 Test Adapter for Visual Studio - Version 3.11 - October 28, 2018
 
 #####  Features
