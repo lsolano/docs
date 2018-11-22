@@ -1,3 +1,19 @@
+#### NUnit3 Test Adapter for Visual Studio - Version 3.11.2 - November 22, 2018
+
+This is a yet another hotfix release to fix the missing categories issue.
+
+##### Resolved Issues
+
+* [568](NUnit3TestAdapter 3.11.1 TestCategory from VSTest no longer working (No tests selected))
+
+##### Reopened issues
+
+This issue was fixed, with a workaround, in 3.11 but had unforeseen consequences, and has been reopened as of this release
+* [506](https://github.com/nunit/nunit3-vs-adapter/issues/506) Test categories aren't propagated to vstest trx logs
+
+This probably need to be fixed in VSTest itself.  
+
+
 #### NUnit3 Test Adapter for Visual Studio - Version 3.11.1 - November 21, 2018
 
 This is a hotfix release to fix the duplicated traits issue.
