@@ -1,3 +1,13 @@
+#### TestGenerator Extension for NUnit in Visual Studio 2017 - Version 2.1 - March 5, 2017
+
+Visual Studio 2017 15.9 and forward should have the adapter added to each test project.  This release ensures that by fixing #25. 
+
+
+##### Features
+
+* [25](https://github.com/nunit/nunit-vs-testgenerator/issues/25)  Add the test adapter as part of the package.  Thanks to [yowko](https://github.com/yowko) for the PR
+
+
 #### TestGenerator Extension for NUnit in Visual Studio 2017 - Version 2 - March 5, 2017
 
 ##### Features
