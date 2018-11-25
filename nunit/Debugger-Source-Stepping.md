@@ -40,4 +40,6 @@ The NUnit framework PDBs are source-indexed with [GitLink](https://github.com/Gi
 
     And track the [issue](https://github.com/dotnet/sdk/issues/1458) linked in the comment to know when this workaround will no longer be needed.
 
+    If the debugger complains about that it cannot find the NUnit files, e.g. `Reflect.cs`, then usually the problem is that no symbol cache directory has been specified. The directory can be specified via Debug > Options > ‘Cache symbols in this directory.’.
+
  4. Congratulations! You can now use the debugger to step into method calls to NUnit and to set breakpoints and watch variables in NUnit source! Keep in mind that it’s still a release build of NUnit, so variables and sequence points may not be available depending on runtime optimizations.
