@@ -4,7 +4,7 @@ This is a yet another hotfix release to fix the missing categories issue.
 
 ##### Resolved Issues
 
-* [568](NUnit3TestAdapter 3.11.1 TestCategory from VSTest no longer working (No tests selected))
+* [568](https://github.com/nunit/nunit3-vs-adapter/issues/568) NUnit3TestAdapter 3.11.1 TestCategory from VSTest no longer working (No tests selected)
 
 ##### Reopened issues
 
