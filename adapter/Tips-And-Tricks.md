@@ -13,7 +13,7 @@ The following options are available:
 |[InternalTraceLevel](#InternalTraceLevel)| string |  Off, Error, Warning, Info, Verbose,  Debug| Nothing => Off|
 |[NumberOfTestWorkers](#NumberOfTestWorkers)| int | nr of workers | -1|
 |[ShadowCopyFiles](#ShadowCopyFiles)| bool |True, False | False|
-|Verbosity](#Verbosity)| int | -1, 0 -5 . -1 means quiet mode | 0|
+|[Verbosity](#Verbosity)| int | -1, 0 -5 . -1 means quiet mode | 0|
 |[UseVsKeepEngineRunning](#UseVsKeepEngineRunning)| bool | True, False| False|
 |[BasePath](#BasePath)| string | path| ?|
 |[PrivateBinPath](#PrivateBinPath) | string| directory1;directory2;etc |?|
@@ -22,8 +22,8 @@ The following options are available:
 |[DefaultTestNamePattern](#DefaultTestNamePattern)|string|Pattern for display name|{m}{a}|
 |[DomainUsage](#DomainUsage)|string| None, Single, Multiple|Single|
 |[WorkDirectory](#WorkDirectory)|string|specify directory|Test assembly location|
-|[DumpXmlTestDiscovery](#DumpXmlTestDiscovery)|bool|Enable dumping of NUnit discovery response xml|false|
-|[DumpXmlTestResults](#DumpXmlTestResults)|bool|Enable dumping of NUnit execution response xml|false|
+|[DumpXmlTestDiscovery](#DumpXmlTestDiscovery-and-DumpXmlTestResults)|bool|Enable dumping of NUnit discovery response xml|false|
+|[DumpXmlTestResults](#DumpXmlTestDiscovery-and-DumpXmlTestResults)|bool|Enable dumping of NUnit execution response xml|false|
 
 
 
