@@ -79,7 +79,7 @@ You can find the files under your current outputfolder, in a subfolder named Dum
 (Note: This is not the same as the TestResults folder, this data is not testresults, but diagnostics dumps)
 
 
-#### Some further information on directories (From [comment](https://github.com/nunit/nunit3-vs-adapter/issues/575#issuecomment-445786421) by [Charlie](https://github.com/CharliePoole)
+#### Some further information on directories (From [comment](https://github.com/nunit/nunit3-vs-adapter/issues/575#issuecomment-445786421) on #575 by [Charlie](https://github.com/CharliePoole) )
 
 NUnit also supports TestContext.TestDirectory, which is the directory where the current test assembly is located. Note that if you have several test assemblies in different directories, the value will be different when each one of them accesses it. Note also that there is no way you can set the TestDirectory because it's always where the assembly is located.
 
