@@ -21,7 +21,7 @@ The following options are available:
 |DefaultTimeout|int|timeout in mS, 0 means infinite|0|
 |DefaultTestNamePattern|string|Pattern for display name|{m}{a}|
 |DomainUsage|string| None, Single, Multiple|Single|
-|WorkDirectory|string|specify directory|Test assembly location|
+|[WorkDirectory](#WorkDirectory)|string|specify directory|Test assembly location|
 |DumpXmlTestDiscovery|bool|Enable dumping of NUnit discovery response xml|false|
 |DumpXmlTestResults|bool|Enable dumping of NUnit execution response xml|false|
 
@@ -39,6 +39,9 @@ https://github.com/nunit/nunit3-vs-adapter/blob/master/src/NUnitTestAdapter/Adap
 
 
 ### Details
+
+#### WorkDirectory
+Our WorkDirectory is the place where output files are intended to be saved for the run, whether created by NUnit or by the user, who can access the work directory using TestContext. It's different from TestDirectory, which is the directory containing the test assembly. For a run with multiple assemblies, there could be multiple TestDirectories, but only one WorkDirectory.
 
 #### InternalTraceLevel
 This setting is a diagnostic setting forwarded to NUnit, and not used by the adapter itself.  For further information see the [NUnit Tracelevel documentation](https://github.com/nunit/docs/wiki/Internal-Trace)
