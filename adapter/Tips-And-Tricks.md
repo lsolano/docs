@@ -10,20 +10,20 @@ The following options are available:
 
 |Key|Type|Options| Default|
 |---|----|-------|--------------|
-|InternalTraceLevel| string |  Off, Error, Warning, Info, Verbose,  Debug| Nothing => Off|
-|NumberOfTestWorkers| int | nr of workers | -1|
-|ShadowCopyFiles| bool |True, False | False|
-|Verbosity| int | -1, 0 -5 . -1 means quiet mode | 0|
-|UseVsKeepEngineRunning| bool | True, False| False|
-|BasePath| string | path| ?|
-|PrivateBinPath | string| directory1;directory2;etc |?|
-|RandomSeed| int | seed integer| random|
-|DefaultTimeout|int|timeout in mS, 0 means infinite|0|
-|DefaultTestNamePattern|string|Pattern for display name|{m}{a}|
-|DomainUsage|string| None, Single, Multiple|Single|
+|[InternalTraceLevel](#InternalTraceLevel)| string |  Off, Error, Warning, Info, Verbose,  Debug| Nothing => Off|
+|[NumberOfTestWorkers](#NumberOfTestWorkers)| int | nr of workers | -1|
+|[ShadowCopyFiles](#ShadowCopyFiles)| bool |True, False | False|
+|Verbosity](#Verbosity)| int | -1, 0 -5 . -1 means quiet mode | 0|
+|[UseVsKeepEngineRunning](#UseVsKeepEngineRunning)| bool | True, False| False|
+|[BasePath](#BasePath)| string | path| ?|
+|[PrivateBinPath](#PrivateBinPath) | string| directory1;directory2;etc |?|
+|[RandomSeed](#RandomSeed) int | seed integer| random|
+|[DefaultTimeout](#DefaultTimeout)|int|timeout in mS, 0 means infinite|0|
+|[DefaultTestNamePattern](#DefaultTestNamePattern)|string|Pattern for display name|{m}{a}|
+|[DomainUsage](#DomainUsage)|string| None, Single, Multiple|Single|
 |[WorkDirectory](#WorkDirectory)|string|specify directory|Test assembly location|
-|DumpXmlTestDiscovery|bool|Enable dumping of NUnit discovery response xml|false|
-|DumpXmlTestResults|bool|Enable dumping of NUnit execution response xml|false|
+|[DumpXmlTestDiscovery](#DumpXmlTestDiscovery)|bool|Enable dumping of NUnit discovery response xml|false|
+|[DumpXmlTestResults](#DumpXmlTestResults)|bool|Enable dumping of NUnit execution response xml|false|
 
 
 
@@ -79,7 +79,7 @@ You can find the files under your current outputfolder, in a subfolder named Dum
 (Note: This is not the same as the TestResults folder, this data is not testresults, but diagnostics dumps)
 
 
-#### Some further information on directories (From [comment](https://github.com/nunit/nunit3-vs-adapter/issues/575#issuecomment-445786421) on #575 by [Charlie](https://github.com/CharliePoole) )
+#### Some further information on directories (From [comment on issue 575](https://github.com/nunit/nunit3-vs-adapter/issues/575#issuecomment-445786421) by [Charlie](https://github.com/CharliePoole) )
 
 NUnit also supports TestContext.TestDirectory, which is the directory where the current test assembly is located. Note that if you have several test assemblies in different directories, the value will be different when each one of them accesses it. Note also that there is no way you can set the TestDirectory because it's always where the assembly is located.
 
