@@ -22,6 +22,7 @@ The following options are available:
 |[DefaultTestNamePattern](#DefaultTestNamePattern)|string|Pattern for display name|{m}{a}|
 |[DomainUsage](#DomainUsage)|string| None, Single, Multiple|Single|
 |[WorkDirectory](#WorkDirectory)|string|specify directory|Test assembly location|
+|[TestOuput](#TestOutput)|string|specify directory|Test Result Xml output folder|
 |[DumpXmlTestDiscovery](#DumpXmlTestDiscovery-and-DumpXmlTestResults)|bool|Enable dumping of NUnit discovery response xml|false|
 |[DumpXmlTestResults](#DumpXmlTestDiscovery-and-DumpXmlTestResults)|bool|Enable dumping of NUnit execution response xml|false|
 
@@ -43,6 +44,13 @@ https://github.com/nunit/nunit3-vs-adapter/blob/master/src/NUnitTestAdapter/Adap
 #### WorkDirectory
 Our WorkDirectory is the place where output files are intended to be saved for the run, whether created by NUnit or by the user, who can access the work directory using TestContext. It's different from TestDirectory, which is the directory containing the test assembly. For a run with multiple assemblies, there could be multiple TestDirectories, but only one WorkDirectory.
 User sets work directory to tell NUnit where to put stuff like the XML or any text output. User may also access it in the code and save other things there. Think of it as the directory for saving stuff. 
+
+#### TestOutput
+If this is specified, the adapter will generate NUnit Test Result Xml data in the folder specified here.  If not specified, no such output will be generated.  
+The folder can be
+
+1) An absolute path
+2) A relative path, which is then relative to either WorkDirectory, of if this is not specified, relative to the current directory, as defined by .net runtime.
 
 #### InternalTraceLevel
 This setting is a diagnostic setting forwarded to NUnit, and not used by the adapter itself.  For further information see the [NUnit Tracelevel documentation](https://github.com/nunit/docs/wiki/Internal-Trace)
