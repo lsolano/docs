@@ -50,7 +50,7 @@ If this is specified, the adapter will generate NUnit Test Result Xml data in th
 The folder can be
 
 1) An absolute path
-2) A relative path, which is then relative to either WorkDirectory, of if this is not specified, relative to the current directory, as defined by .net runtime.
+2) A relative path, which is then relative to either WorkDirectory, or if this is not specified, relative to the current directory, as defined by .net runtime.
 
 #### InternalTraceLevel
 This setting is a diagnostic setting forwarded to NUnit, and not used by the adapter itself.  For further information see the [NUnit Tracelevel documentation](https://github.com/nunit/docs/wiki/Internal-Trace)
