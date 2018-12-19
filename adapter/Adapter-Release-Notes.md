@@ -1,4 +1,4 @@
-#### NUnit3 Test Adapter for Visual Studio - Version 3.12 - December 18, 2018
+#### NUnit3 Test Adapter for Visual Studio - Version 3.12 - December 19, 2018
 
 
 ##### Enhancements
