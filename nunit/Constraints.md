@@ -12,6 +12,7 @@ Constraint Name                      |
 [[AssignableToConstraint]]           |
 [[AttributeConstraint]]              |
 [[AttributeExistsConstraint]]        |
+[[AnyOfConstraint]]                  |
 [[BinarySerializableConstraint]]     |
 [[CollectionContainsConstraint]]     |
 [[CollectionEquivalentConstraint]]   |
@@ -66,6 +67,7 @@ Constraint Name                      |
 Constraint Name                      | 
 -------------------------------------|
 [[AllItemsConstraint]]               |
+[[AnyOfConstraint]]                  |
 [[CollectionContainsConstraint]]     |
 [[CollectionEquivalentConstraint]]   |
 [[CollectionOrderedConstraint]]      |
