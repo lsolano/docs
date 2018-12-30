@@ -19,6 +19,8 @@ Constraint Name                      |
 [[CollectionSubsetConstraint]]       |
 [[CollectionSupersetConstraint]]     |
 [[DelayedConstraint]]                |
+[[DictionaryContainsKeyConstraint]]  |
+[[DictionaryContainsValueConstraint]]|
 [[EmptyCollectionConstraint]]        |
 [[EmptyConstraint]]                  |
 [[EmptyDirectoryConstraint]]         |
@@ -69,6 +71,8 @@ Constraint Name                      |
 [[CollectionOrderedConstraint]]      |
 [[CollectionSubsetConstraint]]       |
 [[CollectionSupersetConstraint]]     |
+[[DictionaryContainsKeyConstraint]]  |
+[[DictionaryContainsValueConstraint]]|
 [[EmptyCollectionConstraint]]        |
 [[ExactCountConstraint]]             |
 [[NoItemConstraint]]                 |
