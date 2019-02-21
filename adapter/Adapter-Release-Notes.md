@@ -1,3 +1,33 @@
+#### NUnit3 Test Adapter for Visual Studio - Version 3.13 - Februar 20, 2019
+
+This release focus on producing NUnit test result xml, which can be useful when you need reports using tools that support the NUnit format.  This can be enabled using [a new setting](https://github.com/nunit/docs/wiki/Tips-And-Tricks#testoutputxml) in the [runsettings file](https://marketplace.visualstudio.com/items?itemName=OsirisTerje.Runsettings-19151).  
+
+The VSIX is also made compatible with the upcoming VS 2019. Please note support for the VSIX is being deprecated in Visual Studio, and we strongly recommend you to change your test projects to use the [nuget adapter version](https://www.nuget.org/packages/NUnit3TestAdapter/). 
+
+The [NUnit internal properties](https://github.com/nunit/nunit/blob/master/src/NUnitFramework/framework/Internal/PropertyNames.cs) have been "over-populating" in the Test Explorer.  These are now filtered out, although you may still see these when you have [Source Based Discovery (SBD)](https://docs.microsoft.com/en-us/visualstudio/test/test-explorer-faq?view=vs-2017) turned on (which is the default in VS).  Once you have run, they will be gone. We expect this part of the issue (SBD) to be fixed in VS. 
+
+If you still want to see the properties, you can enable that again setting a runsettings property [ShowInternalProperties]() to true. 
+
+
+
+##### Enhancements
+
+* [323](https://github.com/nunit/nunit3-vs-adapter/issues/323)  Add support for producing XML test results in NUnit format
+* [474](https://github.com/nunit/nunit3-vs-adapter/issues/474)  Skip surfacing certain properties as UI groupings  (Internal NUnit properties are no longer visible in Test Explorer)
+* [590](https://github.com/nunit/nunit3-vs-adapter/issues/590)  Support for Visual Studio 2019 (VSIX)
+
+##### Resolved Issues
+
+* [302](https://github.com/nunit/nunit3-vs-adapter/issues/302) BadImageFormatException building solution with unmanaged projects) Extra fix for this, see [PR 592](https://github.com/nunit/nunit3-vs-adapter/pull/592) Issue302 native execution in execution. Thanks to [Oski Kervinen](https://github.com/OskiKervinen-MF) for fixing this.  
+* [596](https://github.com/nunit/nunit3-vs-adapter/issues/596)  TestOutputXml should handle relative paths relative to the Workfolder
+* [600](https://github.com/nunit/nunit3-vs-adapter/issues/600)  TestOutputXml setting ignored on netcore2.1, works on net461
+
+##### Other fixes
+* [599](https://github.com/nunit/nunit3-vs-adapter/issues/599)   Url in the repo header pointing to [nunit.org](https://nunit.org) changed to https, also some other similar changes other places.  Thanks to [Julian Verdurmen](https://github.com/304NotModified) for fixing these. 
+
+---
+
+
 #### NUnit3 Test Adapter for Visual Studio - Version 3.12 - December 19, 2018
 
 

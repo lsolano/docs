@@ -25,10 +25,11 @@ The following options are available:
 |[TestOutputXml](#TestOutputXml)|string|specify directory|Test Result Xml output folder|
 |[DumpXmlTestDiscovery](#DumpXmlTestDiscovery-and-DumpXmlTestResults)|bool|Enable dumping of NUnit discovery response xml|false|
 |[DumpXmlTestResults](#DumpXmlTestDiscovery-and-DumpXmlTestResults)|bool|Enable dumping of NUnit execution response xml|false|
+|[ShowInternalProperties](#ShowInternalProperties)| bool | Turn on showing internal NUnit properties in Test Explorer| false|
 
 
-
-
+### Visual Studio templates for runsettings
+You can install [item templates for runsettings](https://marketplace.visualstudio.com/items?itemName=OsirisTerje.Runsettings-19151) in Visual Studio (applies to version 2017, 2019 and upwards) which includes the NUnit settings mentioned here.  Note that there are available seperate installs for earlier Visual Studio versions, links to these can be found in the above. 
 
 
 ### Example implementation
@@ -85,6 +86,10 @@ This setting is used by the adapter to signal to the VSTest.Execution engine to 
 These settings are used to dump the output from NUnit, as it is received by the adapter, before any processing in the adapter is done, to disk.  It is part of the diagnostics tools for the adapter. 
 You can find the files under your current outputfolder, in a subfolder named Dump. 
 (Note: This is not the same as the TestResults folder, this data is not testresults, but diagnostics dumps)
+
+
+#### ShowInternalProperties
+The [NUnit internal properties](https://github.com/nunit/nunit/blob/master/src/NUnitFramework/framework/Internal/PropertyNames.cs) have been "over-populating" in the Test Explorer.  These are default filtered out, although you may still see these when you have [Source Based Discovery (SBD)](https://docs.microsoft.com/en-us/visualstudio/test/test-explorer-faq?view=vs-2017) turned on (which is the default in VS).  Once you have run test execution, they will be gone. We expect this part of the issue (SBD) to be fixed in VS.  If you still want to see them, set this property to true. 
 
 
 #### Some further information on directories (From [comment on issue 575](https://github.com/nunit/nunit3-vs-adapter/issues/575#issuecomment-445786421) by [Charlie](https://github.com/CharliePoole) )
