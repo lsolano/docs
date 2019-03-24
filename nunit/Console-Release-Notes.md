@@ -1,4 +1,63 @@
-#### NUnit 3.9 - September 5, 2018
+#### NUnit Console 3.10 - March 24, 2019
+
+This release merges the .NET Standard version of the engine back into the nunit.engine
+NuGet package and adds a .NET Standard 2.0 version of the engine that re-enables most
+services and extensions. This deprecates the `nunit.engine.netstandard` NuGet package.
+Any test runners using the old .NET Standard version of the engine should switch to
+this release.
+
+The `--params` command line option which took multiple test parameters separated by
+a semi-colon is now deprecated in favor of the new `--testparam` command line option.
+One of the most common uses for test parameters was to pass connection strings into
+tests but this required workarounds to handle the semi-colons. Now you must pass in
+each test paramater separately using a `--testparam` or `-tp` option for each.
+
+#### Issues Resolved
+
+ * [8](https://github.com/nunit/nunit-console/issues/8) TempResourceFile.Dispose causes run to hang
+ * [23](https://github.com/nunit/nunit-console/issues/23) In nunit3-console you cannot pass parameters containing ';' because they always get splitted
+ * [178](https://github.com/nunit/nunit-console/issues/178) Add date and time to console output
+ * [282](https://github.com/nunit/nunit-console/issues/282) "Execution terminated after first error" does not fail the console runner
+ * [388](https://github.com/nunit/nunit-console/issues/388) Merge .NET Standard Engine back into the main solution
+ * [389](https://github.com/nunit/nunit-console/issues/389) Update Mono.Cecil to latest
+ * [433](https://github.com/nunit/nunit-console/issues/433) All messages from EventListenerTextWriter goes to console output independent on stream name
+ * [454](https://github.com/nunit/nunit-console/issues/454) Misc improvements to ExtensionServiceTests
+ * [455](https://github.com/nunit/nunit-console/issues/455) Remove CF, Silverlight and PORTABLE functionality
+ * [464](https://github.com/nunit/nunit-console/issues/464) NUnit Console Reports Successful Exit Code When there is an Exception on Dispose
+ * [473](https://github.com/nunit/nunit-console/issues/473) ArgumentException: DTD is prohibited in this XML document
+ * [476](https://github.com/nunit/nunit-console/issues/476) .NET Standard engine to load extensions
+ * [479](https://github.com/nunit/nunit-console/issues/479) Merge .NET Standard Engine code back into the main solution
+ * [483](https://github.com/nunit/nunit-console/issues/483) Error in SetUpFixture does not result in non-zero exit code
+ * [485](https://github.com/nunit/nunit-console/issues/485) Invalid integer arguments do not display properly in error message
+ * [493](https://github.com/nunit/nunit-console/issues/493) Correct order of params to Guard.ArgumentValid()
+ * [498](https://github.com/nunit/nunit-console/issues/498) Reset console colors after Ctrl-C
+ * [501](https://github.com/nunit/nunit-console/issues/501) Create result directory if it does not exist
+ * [502](https://github.com/nunit/nunit-console/issues/502) Remove unused method from build.cake
+ * [506](https://github.com/nunit/nunit-console/issues/506) Dogfood NUnit.Analyzers via the nunit-console tests
+ * [508](https://github.com/nunit/nunit-console/issues/508) Re-Enable OSX CI tests
+ * [515](https://github.com/nunit/nunit-console/issues/515) Appveyor CI failing on master
+ * [518](https://github.com/nunit/nunit-console/issues/518) Correct Refactoring Error
+ * [519](https://github.com/nunit/nunit-console/issues/519) Break up multiple console error messages with colour
+ * [523](https://github.com/nunit/nunit-console/issues/523) Reloading multiple files causes exception
+ * [524](https://github.com/nunit/nunit-console/issues/524) .NET Standard 2.0 engine crashes when .NET Framework extensions are in Global NuGet Cache
+ * [525](https://github.com/nunit/nunit-console/issues/525) Separate NuGet Restore for Appveyor build
+ * [531](https://github.com/nunit/nunit-console/issues/531) Building a forked master branch results in publishing artifacts
+ * [533](https://github.com/nunit/nunit-console/issues/533) Duplicate ids when loading a project
+ * [544](https://github.com/nunit/nunit-console/issues/544) Deprecate nunit.netstandard.engine NuGet package
+ * [546](https://github.com/nunit/nunit-console/issues/546) Cannot run a project file using --process:Separate
+ * [547](https://github.com/nunit/nunit-console/issues/547) --labels=Before ignores --nocolor
+ * [556](https://github.com/nunit/nunit-console/issues/556) Appveyor CI failing due to nuget restore
+ * [557](https://github.com/nunit/nunit-console/issues/557) Disable CliFallbackFolder as a nuget source
+ * [562](https://github.com/nunit/nunit-console/issues/562) Fix typo in comment
+ * [563](https://github.com/nunit/nunit-console/issues/563) ProjectService is incorrectly initialized in agents
+ * [565](https://github.com/nunit/nunit-console/issues/565) Eliminate -dbg suffix from version
+ * [566](https://github.com/nunit/nunit-console/issues/566) SettingsService is not needed in agents
+ * [567](https://github.com/nunit/nunit-console/issues/567) Unnecessary call to IProjectService
+ * [571](https://github.com/nunit/nunit-console/issues/571) Space characters in the work directory path are not properly handled
+ * [583](https://github.com/nunit/nunit-console/issues/583) NUnit Console NuGet Package Doesn't Load Extensions
+ * [587](https://github.com/nunit/nunit-console/issues/587) Disable new MSBuild GenerateSupportedRuntime functionality, which breaks framework targetting
+
+#### NUnit Console 3.9 - September 5, 2018
 
 This release should stop the dreaded SocketException problem on shutdown. The
 console also no longer returns -5 when AppDomains fail to unload at the end of a
@@ -31,7 +90,7 @@ and running your tests in any IDE and on any .NET Framework back to .NET 2.0.
  * [456](https://github.com/nunit/nunit-console/issues/456) NuGet Package : Add `repository` metadata.
  * [461](https://github.com/nunit/nunit-console/issues/461) Use MSBuild /restore
 
-### NUnit 3.8 - January 27, 2018
+### NUnit Console 3.8 - January 27, 2018
 
 This release includes several fixes when unloading AppDomains and better error reporting. The
 aggregate NuGet packages also include updated versions of several extensions.
@@ -67,7 +126,7 @@ aggregate NuGet packages also include updated versions of several extensions.
  * [350](https://github.com/nunit/nunit-console/issues/350) Invalid assemblies no longer give an error message
  * [355](https://github.com/nunit/nunit-console/issues/355) NuGet package links to outdated license
 
-### NUnit 3.7 - July 13, 2017
+### NUnit Console 3.7 - July 13, 2017
 
 #### Engine
 
