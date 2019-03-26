@@ -7,10 +7,10 @@ Any test runners using the old .NET Standard version of the engine should switch
 this release.
 
 The `--params` command line option which took multiple test parameters separated by
-a semi-colon is now deprecated in favor of the new `--testparam` command line option.
+a semicolon is now deprecated in favor of the new `--testparam` command line option.
 One of the most common uses for test parameters was to pass connection strings into
-tests but this required workarounds to handle the semi-colons. Now you must pass in
-each test paramater separately using a `--testparam` or `-tp` option for each.
+tests but this required workarounds to handle the semicolons. Now you must pass in
+each test paramater separately using a `--testparam` or `--tp` option for each.
 
 #### Issues Resolved
 
