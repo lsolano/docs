@@ -13,7 +13,7 @@ The following options are available:
 |[InternalTraceLevel](#InternalTraceLevel)| string |  Off, Error, Warning, Info, Verbose,  Debug| Nothing => Off|
 |[NumberOfTestWorkers](#NumberOfTestWorkers)| int | nr of workers | -1|
 |[ShadowCopyFiles](#ShadowCopyFiles)| bool |True, False | False|
-|[Verbosity](#Verbosity)| int | -1, 0 -5 . -1 means quiet mode | 0|
+|[Verbosity](#Verbosity)| int | -1, 0-5 . -1 means quiet mode | 0|
 |[UseVsKeepEngineRunning](#UseVsKeepEngineRunning)| bool | True, False| False|
 |[BasePath](#BasePath)| string | path| ?|
 |[PrivateBinPath](#PrivateBinPath) | string| directory1;directory2;etc |?|
