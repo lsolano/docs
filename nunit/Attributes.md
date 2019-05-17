@@ -18,6 +18,7 @@ This table lists all the attributes supported by NUnit.
 | [[LevelOfParallelism Attribute]]  | Specifies the level of parallelism at assembly level. |
 | [[MaxTime Attribute]]             | Specifies the maximum time in milliseconds for a test case to succeed. |
 | [[NonParallelizable Attribute]]   | Specifies that the test and its descendants may not be run in parallel. |
+| [[NonTestAssembly Attribute]]     | Specifies that the assembly references the NUnit framework, but that it does not contain tests. |
 | [[OneTimeSetUp Attribute]]        | Identifies methods to be called once prior to any child tests. |
 | [[OneTimeTearDown Attribute]]     | Identifies methods to be called once after all child tests. |
 | [[Order Attribute]]               | Specifies the order in which decorated test should be run (against others). |
