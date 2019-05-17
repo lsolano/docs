@@ -79,7 +79,7 @@ Without the V2 driver, only version 3.0 and higher tests may be run.
     <td>Stop run immediately upon any test failure or error.</td></tr>
     
 <tr><th>--skipnontestassemblies</th>
-    <td>Skip any non-test assemblies specified, without error.</td></tr>
+    <td>Skip any non-test assemblies specified - or assemblies containing NUnit.Framework.NonTestAssemblyAttribute, without error.</td></tr>
 
 <tr><th>--debug</th>
     <td>Causes NUnit to break into the debugger immediately before it executes your tests. This is particularly useful when the tests are running in a separate process to which you would otherwise have to attach.</td></tr>
