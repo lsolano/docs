@@ -21,7 +21,7 @@ Since it does run tests in parallel, NUnit 3.0 needs a new approach to handling 
 
 * Console standard output will be captured and added to the test result.
 
-* A separate facility will be added to the NUnit `TextContext` to allow tests to write directly to the test result.
+* A separate facility will be added to the NUnit `TestContext` to allow tests to write directly to the test result.
   * **TestContext.Out** gets a `TextWriter` that may be used to write output to the TestResult. 
 
   * **TestContext.Write(...)** is a static method that writes output to the TestResult. Multiple overloads will be provided.
