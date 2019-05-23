@@ -1,8 +1,8 @@
-#### NUnit3 Test Adapter for Visual Studio - Version 3.13 - Februar 20, 2019
+#### NUnit3 Test Adapter for Visual Studio - Version 3.13 - February 20, 2019
 
-This release focus on producing NUnit test result xml, which can be useful when you need reports using tools that support the NUnit format.  This can be enabled using [a new setting](https://github.com/nunit/docs/wiki/Tips-And-Tricks#testoutputxml) in the [runsettings file](https://marketplace.visualstudio.com/items?itemName=OsirisTerje.Runsettings-19151).  
+This release focuses on producing NUnit test result XML which can be useful when you need reports using tools that support the NUnit format.  This can be enabled using [a new setting](https://github.com/nunit/docs/wiki/Tips-And-Tricks#testoutputxml) in the [runsettings file](https://marketplace.visualstudio.com/items?itemName=OsirisTerje.Runsettings-19151).  
 
-The VSIX is also made compatible with the upcoming VS 2019. Please note support for the VSIX is being deprecated in Visual Studio, and we strongly recommend you to change your test projects to use the [nuget adapter version](https://www.nuget.org/packages/NUnit3TestAdapter/). 
+The VSIX is also made compatible with the upcoming VS 2019. Please note support for the VSIX is being deprecated in Visual Studio, and we strongly recommend you to change your test projects to use the [NuGet adapter version](https://www.nuget.org/packages/NUnit3TestAdapter/). 
 
 The [NUnit internal properties](https://github.com/nunit/nunit/blob/master/src/NUnitFramework/framework/Internal/PropertyNames.cs) have been "over-populating" in the Test Explorer.  These are now filtered out, although you may still see these when you have [Source Based Discovery (SBD)](https://docs.microsoft.com/en-us/visualstudio/test/test-explorer-faq?view=vs-2017) turned on (which is the default in VS).  Once you have run, they will be gone. We expect this part of the issue (SBD) to be fixed in VS. 
 
