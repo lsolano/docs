@@ -7,6 +7,7 @@
 
 #### Bugfixes
 * [#147](https://github.com/nunit/nunit-vs-adapter/issues/147) Fails to resolve assembly for base type of TestFixture if placed in a different dll
+* [#178](https://github.com/nunit/nunit-vs-adapter/issues/178) Test Explorer Picks up Zero Tests in VS 2017 for NUnit 2
 
 ---
 
