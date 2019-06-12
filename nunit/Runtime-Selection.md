@@ -1,4 +1,4 @@
-By default, NUnit runs tests under under the runtime version for which the test 
+By default, NUnit runs tests under the runtime version for which the test 
 assembly was built, provided it is available on the test machine. If it is not available,
 NUnit runs the assembly under the best available runtime that will allow it to run. If
 no suitable runtime can be found, an error is reported.
