@@ -114,7 +114,7 @@ Since version 2.2, NUnit has been able to compare two single-dimensioned arrays.
 Beginning with version 2.4, multi-dimensioned arrays, nested arrays (arrays of arrays)
 and collections may be compared. With version 2.5, any IEnumerable is supported.
 Two arrays, collections or IEnumerables are considered equal if they have the
-the same dimensions and if each of the corresponding elements is equal.
+same dimensions and if each of the corresponding elements is equal.
 	
 If you want to treat two arrays of different shapes as simple collections 
 for purposes of comparison, use the **AsCollection** modifier, which causes 
@@ -218,7 +218,7 @@ Assert.That(list1, Is.EqualTo(list2).Using(myComparer));
 	To avoid confusion, consider using **Is.NaN** where appropriate.
 	
  5. When an equality test between two strings fails, the relevant portion of
-	of both strings is displayed in the error message, clipping the strings to
+	both strings is displayed in the error message, clipping the strings to
 	fit the length of the line as needed. Beginning with 2.4.4, this behavior
 	may be modified by use of the **NoClip** modifier on the constraint. In
 	addition, the maximum line length may be modified for all tests by setting

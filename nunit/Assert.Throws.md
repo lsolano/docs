@@ -8,7 +8,7 @@ a few ways to use this.
 
 **Assert.Throws** may be used with a constraint argument, which is applied
 to the actual exception thrown, or with the Type of exception expected.
-The Type format is available in both both a non-generic and generic form.
+The Type format is available in both a non-generic and generic form.
 
 If the code under test is async, you must use [[Assert.ThrowsAsync]].
 
